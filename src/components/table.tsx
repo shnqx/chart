@@ -1,29 +1,29 @@
+import { demoOrders } from "@/lib/demo_data"
+
 export default function Table() {
+
+    const items = demoOrders;
 
     return (
         <div>
             <table className="w-full text-left">
-                <thead className="bg-slate-50 text-sm uppercase text-slate-400">
+                <thead className="text-sm uppercase text-slate-400">
                     <tr className="border-t border-slate-100">
-                        <th className="p-5">Заказ</th>
-                        <th>Заказчик</th>
-                        <th>Сумма</th>
-                        <th>Статус</th>
+                        <th className="text-sm px-8 py-5">Заказ</th>
+                        <th className="text-sm px-8 py-5">Заказчик</th>
+                        <th className="text-sm px-8 py-5">Сумма</th>
+                        <th className="text-sm px-8 py-5">Статус</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="border-t border-slate-100">
-                        <td className="p-5">a</td>
-                        <td className="p-5">b</td>
-                        <th className="p-5">c</th>
-                        <th className="p-5">d</th>
-                    </tr>
-                    <tr className="border-t border-slate-100">
-                        <td className="p-5">a</td>
-                        <td className="p-5">b</td>
-                        <th className="p-5">c</th>
-                        <th className="p-5">d</th>
-                    </tr>
+                    {items.map((item) => (
+                        <tr key={item.id} className="border-t border-slate-100">
+                            <td className="px-8 py-4">{item.id}</td>
+                            <td className="px-8 py-4">{item.customer}</td>
+                            <td className="px-8 py-4">{item.amount}{" руб."}</td>
+                            <td className="px-8 py-4">{item.status === "Pending" && "Ожидает"}{item.status === "Paid" && "Оплачен"}{item.status === "Refunded" && "Возврат"}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>

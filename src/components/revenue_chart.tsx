@@ -1,11 +1,5 @@
+import { chartData } from '@/lib/demo_data';
 import { Area, AreaChart, CartesianGrid, createHorizontalChart, Tooltip, XAxis, YAxis } from 'recharts';
-
-export const data = [
-    { day: "Пн ", revenue: 42000, }, { day: "Вт", revenue: 58000 },
-    { day: "Ср", revenue: 49000 }, { day: "Чт", revenue: 76000 },
-    { day: "Пт", revenue: 65000 }, { day: "Сб", revenue: 91000 },
-    { day: "Вс", revenue: 84000 }
-];
 
 export default function RevenueChart({ isAnimationActive = true }) {
 
@@ -16,7 +10,7 @@ export default function RevenueChart({ isAnimationActive = true }) {
             <AreaChart className="mt-5"
                 style={{ width: '100%', maxWidth: '700px', maxHeight: '70vh', aspectRatio: 1.618 }}
                 responsive
-                data={data}
+                data={chartData}
                 margin={{ top: 10, right: 0, left: 0, bottom: 0 }}
             >
                 <defs>
