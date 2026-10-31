@@ -9,9 +9,11 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@recharts/devtools": "github:recharts/devtools",
     "next": "16.4.3",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "recharts": "^3.10.1"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
