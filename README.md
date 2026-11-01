@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chart — Аналитическая панель (Dashboard)
 
-## Getting Started
+**Учебный проект (Dashboard) для демонстрации навыков разработки интерфейсов с визуализацией данных на стеке React, Next.js и TypeScript.**
 
-First, run the development server:
+Проект представляет собой современную панель аналитики для отслеживания бизнес-метрик (выручка, клиенты, заказы), управления заказами и мониторинга последней активности в реальном времени. Разрабатывается с прицелом на производительность, чистоту кода и масштабируемую архитектуру.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[🔗 Посмотреть деплой (Live Demo)] (https://chart-seven-pi.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Стек технологий
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*   **Фреймворк:** Next.js (App Router, Server & Client Components)
+*   **Язык:** TypeScript (строгая типизация пропсов, моделей данных и API)
+*   **Стилизация:** Tailwind CSS (адаптивная верстка, кастомная дизайн-система)
+*   **Компоненты & Графики:** Решения для построения интерактивных графиков доходов (Recharts)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Текущий функционал & Модули
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*   **Аналитический дашборд:** Интерактивный график доходов, карточки суммарных метрик (Общая выручка, Всего клиентов, Всего заказов).
+*   **Лента активности:** Блок «Последняя активность» с динамическим отображением статусов («Заказ оплачен», «Получен новый заказ») и временными метками.
+*   **Навигация:** Боковая панель управления (Аналитика, Заказы, Клиенты, Настройки).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🗺 В планах разработки (Roadmap)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Проект активно развивается. Ближайшие фичи для реализации:
+*   [ ] **Интеграция с Supabase:** Подключение полноценной базы данных для хранения заказов и клиентов.
+*   [ ] **Глобальный стейт (Zustand):** Внедрение легковесного стейт-менеджера для управления состоянием фильтров и модальных окон.
+*   [ ] **Полноценный CRUD:** Создание интерактивных модальных окон для добавления, редактирования и удаления заказов (кнопка «Добавить заказ»).
+*   [ ] **Поиск и фильтрация:** Добавление умного поиска по клиентам и фильтрации данных на верхних графиках.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 💻 Как запустить проект локально
+
+1. Клонировать репозиторий:
+   ```bash
+   git clone https://github.com/shnqx/chart.git
+   ```
+
+2. Перейти в папку с проектом:
+   ```bash
+   cd chart
+   ```
+
+3. Установить зависимости:
+   ```bash
+   npm install
+   ```
+
+4. Запустить сервер для разработки:
+   ```bash
+   npm run dev
+   ```
+   Приложение будет доступно по адресу [http://localhost:3000](http://localhost:3000).
+
+---
+
+## ✉️ Контакты для связи
+
+Если у вас есть вопросы по проекту или вы хотите пригласить меня на интервью:
+
+*   **Telegram:** [@shipunov_nikita](https://t.me/shipunov_nikita)
+*   **Email:** shnqx@mail.ru
+*   **GitHub:** [shnqx](https://github.com/shnqx)
